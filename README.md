@@ -1,6 +1,7 @@
 
-# AWS Autoscaling Group with Launch Template  
-This Terraform configuration creates an AWS Autoscaling Group (ASG) using a Launch Template. It also includes a null resource to wait for changes in the ASG and trigger a local script.  
+# AWS ASG Rolling Update with Terraform 
+This repository offers robust Terraform configurations for ASG infrastructure, showcasing AWS deployment and scaling best practices. Use it to deploy new instances with minimal downtime using rolling updates.
+
 ## Prerequisites  
 Before you begin, make sure you have the following prerequisites:  
 - [Terraform](https://www.terraform.io/downloads.html) installed on your local machine.
