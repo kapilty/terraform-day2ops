@@ -1,4 +1,3 @@
-
 # AWS ASG Rolling Update with Terraform 
 This repository offers robust Terraform configurations for ASG infrastructure, showcasing AWS deployment and scaling best practices. Use it to deploy new instances with minimal downtime using rolling updates.
 
@@ -11,9 +10,9 @@ Before you begin, make sure you have the following prerequisites:
 
 1. Clone this repository to your local machine:     
 
-    `git clone <repository-url>`
+    `git clone https://github.com/madgicaltechdom/terraform-as-rolling-updates.git`
 
-    `cd <repository-directory> `
+    `cd terraform-as-rolling-updates `
 
 2.  Initialize Terraform in the project directory:
     
@@ -29,7 +28,12 @@ Before you begin, make sure you have the following prerequisites:
     
 6.  Terraform will provision the ASG and Launch Template according to your configuration.
     
-7.  To trigger the `checkout.py` script after the ASG update, use the null resource defined in the Terraform configuration.
+7.  Change the [AMI](https://github.com/madgicaltechdom/terraform-as-rolling-updates/blob/main/ami.tf#L5-L15) according to your requirements
+8.  Apply the Terraform configuration:
+    
+    `terraform apply`
+
+9. You would noticed that the ASG is deploying the latest AMI with minimal downtime.    
     
 
 Configuration
