@@ -9,5 +9,6 @@ terraform {
 
 
 provider "aws" {
-  profile = "rearc-eng"
+  //profile = "rearc-eng"
+  region = "ap-south-1"
 }
