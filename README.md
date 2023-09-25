@@ -10,9 +10,9 @@ Before you begin, make sure you have the following prerequisites:
 
 1. Clone this repository to your local machine:     
 
-    `git clone https://github.com/madgicaltechdom/terraform-as-rolling-updates.git`
+    `git clone https://github.com/madgicaltechdom/terraform-asg-rolling-updates.git`
 
-    `cd terraform-as-rolling-updates `
+    `cd terraform-asg-rolling-updates `
 
 2.  Initialize Terraform in the project directory:
     
