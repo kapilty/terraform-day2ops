@@ -8,7 +8,7 @@ def main(args):
     asg_name = os.environ.get('ASG_NAME')
     assert asg_name is not None, 'Must set ASG_NAME in environment.'
 
-    autoscaling = boto3.client('autoscaling')
+    autoscaling = boto3.client('autoscaling', region_name='ap-south-1')
 
     try: 
         refresh = autoscaling.describe_instance_refreshes(
